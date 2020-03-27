@@ -1,0 +1,22 @@
+.parent > p {
+    background-color: cyan;
+}
+
+h1, h2 {
+    font-size: 45px;
+    color: darkgray;
+    background-color: black;
+}
+
+.light-coffee {
+    font-style: italic;
+}
+
+.like-coffee {
+    font-stretch: expanded;
+}
+
+li {
+    font-family: monospace;
+    font-size: large;
+}

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+.space-one {
+    display: inline-block;
+    width: 100%;
+    height: 150px;
+    background-color: #F5C6D6;
+    border:5px solid white;
+    
+}
+.space-two {
+    display: inline-block;
+    background-color: #EE2E84;
+    width: 25%;
+    height: 150px;
+    border:5px solid white;
+}
+.space-three {
+    display: inline-block;
+    height: 150px;
+    width: 50%;
+    background-color:#85CFD8;
+    border:5px solid white;
+}
+.space-four {
+    display: inline-block;
+    height: 150px;
+    width: 75%;
+    background-color:#8DC63F;
+    border:5px solid white;
+}
+.space-five {
+    display: inline-block;
+    height: 150px;
+    width: 25%;
+    background-color:#E76E34;
+    border:5px solid white;
+}
