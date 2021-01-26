@@ -1,0 +1,53 @@
+@Checkout
+Feature: Checkout
+
+Scenario: Log in with different permissions
+
+Given I am an Owner
+When I logged out 
+Then Log in
+
+Given I am an Admin
+When I logged out 
+Then log in
+
+Given I am an Editor
+When I logged out 
+Then log in
+
+Given I am a Reader
+When I logged out 
+Then log in
+
+Scenario: Voting on items
+
+Given I create an Item
+When I vote up on this item 
+Then I should see the green thumb up 
+and the vote-count is 1
+but the vote-count is not 0
+
+Given I create an Item
+When I vote down on this item 
+Then I should see the red thumb up 
+and the vote-count is -1
+but the vote-count is not 0
+
+Given I create an Item
+and I vote up on the item
+and The green thumb up is visible
+and The vote count is visible 
+When I reload the page 
+Then I should see the green thumb up
+and I should see the vote count 1
+but I shouldn't see the vote count 0
+
+Given I create an Item
+and I vote up on the item
+and The red thumb up is visible
+and The vote count is visible 
+When I reload the page 
+Then I should see the red thumb up
+and I should see the vote count -1
+but I shouldn't see the vote count 0
+
